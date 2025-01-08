@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(157, 210, 157), rgb(208, 208, 134));
+    width: 90vmin;
+    height: 92vmin;
+    border: solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.head{
+    background: linear-gradient(red, yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.snake{
+    background-color: magenta;
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
